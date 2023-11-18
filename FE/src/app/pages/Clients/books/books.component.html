@@ -1,0 +1,1130 @@
+<hr class="mb-10" />
+<div class="max-w-6xl mx-auto">
+  <span>Home/Books</span>
+  <div class="content grid grid-cols-5 gap-4 max-w-6xl mx-auto">
+    <section class="filer-item col-span-1 hidden lg:block">
+      <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">Filter Option</h2>
+      <div class="mt-4">
+        <div class="hidden space-y-4 lg:block">
+          <div>
+            <div class="mt-1 space-y-2">
+              <details
+                class="overflow-hidden rounded border border-gray-300 [&_summary::-webkit-details-marker]:hidden"
+              >
+                <summary
+                  class="flex cursor-pointer items-center justify-between gap-2 p-4 text-gray-900 transition"
+                >
+                  <span class="text-sm font-medium"> Availability </span>
+
+                  <span class="transition group-open:-rotate-160">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-4 w-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </span>
+                </summary>
+
+                <div class="border-t border-gray-200 bg-white">
+                  <header class="flex items-center justify-between p-4">
+                    <span class="text-sm text-gray-700"> 0 Selected </span>
+
+                    <button
+                      type="button"
+                      class="text-sm text-gray-900 underline underline-offset-4"
+                    >
+                      Reset
+                    </button>
+                  </header>
+
+                  <ul class="space-y-1 border-t border-gray-200 p-4">
+                    <li>
+                      <label
+                        for="FilterInStock"
+                        class="inline-flex items-center gap-2"
+                      >
+                        <input
+                          type="checkbox"
+                          id="FilterInStock"
+                          class="h-5 w-5 rounded border-gray-300"
+                        />
+
+                        <span class="text-sm font-medium text-gray-700">
+                          In Stock (5+)
+                        </span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label
+                        for="FilterPreOrder"
+                        class="inline-flex items-center gap-2"
+                      >
+                        <input
+                          type="checkbox"
+                          id="FilterPreOrder"
+                          class="h-5 w-5 rounded border-gray-300"
+                        />
+
+                        <span class="text-sm font-medium text-gray-700">
+                          Pre Order (3+)
+                        </span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label
+                        for="FilterOutOfStock"
+                        class="inline-flex items-center gap-2"
+                      >
+                        <input
+                          type="checkbox"
+                          id="FilterOutOfStock"
+                          class="h-5 w-5 rounded border-gray-300"
+                        />
+
+                        <span class="text-sm font-medium text-gray-700">
+                          Out of Stock (10+)
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details
+                class="overflow-hidden rounded border border-gray-300 [&_summary::-webkit-details-marker]:hidden"
+              >
+                <summary
+                  class="flex cursor-pointer items-center justify-between gap-2 p-4 text-gray-900 transition"
+                >
+                  <span class="text-sm font-medium"> Price </span>
+
+                  <span class="transition group-open:-rotate-160">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-4 w-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </span>
+                </summary>
+
+                <div class="border-t border-gray-200 bg-white">
+                  <header class="flex items-center justify-between p-4">
+                    <span class="text-sm text-gray-700">
+                      The highest price is $600
+                    </span>
+
+                    <button
+                      type="button"
+                      class="text-sm text-gray-900 underline underline-offset-4"
+                    >
+                      Reset
+                    </button>
+                  </header>
+
+                  <div class="border-t border-gray-200 p-4">
+                    <div class="flex justify-between gap-4">
+                      <label
+                        for="FilterPriceFrom"
+                        class="flex items-center gap-2"
+                      >
+                        <span class="text-sm text-gray-600">$</span>
+
+                        <input
+                          type="number"
+                          id="FilterPriceFrom"
+                          placeholder="From"
+                          class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
+                        />
+                      </label>
+
+                      <label
+                        for="FilterPriceTo"
+                        class="flex items-center gap-2"
+                      >
+                        <span class="text-sm text-gray-600">$</span>
+
+                        <input
+                          type="number"
+                          id="FilterPriceTo"
+                          placeholder="To"
+                          class="w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              <details
+                class="overflow-hidden rounded border border-gray-300 [&_summary::-webkit-details-marker]:hidden"
+              >
+                <summary
+                  class="flex cursor-pointer items-center justify-between gap-2 p-4 text-gray-900 transition"
+                >
+                  <span class="text-sm font-medium"> Colors </span>
+
+                  <span class="transition group-open:-rotate-160">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-4 w-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </span>
+                </summary>
+
+                <div class="border-t border-gray-200 bg-white">
+                  <header class="flex items-center justify-between p-4">
+                    <span class="text-sm text-gray-700"> 0 Selected </span>
+
+                    <button
+                      type="button"
+                      class="text-sm text-gray-900 underline underline-offset-4"
+                    >
+                      Reset
+                    </button>
+                  </header>
+
+                  <ul class="space-y-1 border-t border-gray-200 p-4">
+                    <li>
+                      <label
+                        for="FilterRed"
+                        class="inline-flex items-center gap-2"
+                      >
+                        <input
+                          type="checkbox"
+                          id="FilterRed"
+                          class="h-5 w-5 rounded border-gray-300"
+                        />
+
+                        <span class="text-sm font-medium text-gray-700">
+                          Red
+                        </span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label
+                        for="FilterBlue"
+                        class="inline-flex items-center gap-2"
+                      >
+                        <input
+                          type="checkbox"
+                          id="FilterBlue"
+                          class="h-5 w-5 rounded border-gray-300"
+                        />
+
+                        <span class="text-sm font-medium text-gray-700">
+                          Blue
+                        </span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label
+                        for="FilterGreen"
+                        class="inline-flex items-center gap-2"
+                      >
+                        <input
+                          type="checkbox"
+                          id="FilterGreen"
+                          class="h-5 w-5 rounded border-gray-300"
+                        />
+
+                        <span class="text-sm font-medium text-gray-700">
+                          Green
+                        </span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label
+                        for="FilterOrange"
+                        class="inline-flex items-center gap-2"
+                      >
+                        <input
+                          type="checkbox"
+                          id="FilterOrange"
+                          class="h-5 w-5 rounded border-gray-300"
+                        />
+
+                        <span class="text-sm font-medium text-gray-700">
+                          Orange
+                        </span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label
+                        for="FilterPurple"
+                        class="inline-flex items-center gap-2"
+                      >
+                        <input
+                          type="checkbox"
+                          id="FilterPurple"
+                          class="h-5 w-5 rounded border-gray-300"
+                        />
+
+                        <span class="text-sm font-medium text-gray-700">
+                          Purple
+                        </span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label
+                        for="FilterTeal"
+                        class="inline-flex items-center gap-2"
+                      >
+                        <input
+                          type="checkbox"
+                          id="FilterTeal"
+                          class="h-5 w-5 rounded border-gray-300"
+                        />
+
+                        <span class="text-sm font-medium text-gray-700">
+                          Teal
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+              <nz-demo-collapse-basic />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="books col-span-4">
+      <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">Books</h2>
+      <div
+        class="divide-x divide-gray-200 rounded-md py-3 items-center mt-4 mb-4 flex w-full border border-gray-200"
+      >
+        <div class="items-center flex w-full justify-between mx-4">
+          <div class="space-x-4">
+            <span>Today</span>
+            <span>This weak</span>
+            <span>This month</span>
+          </div>
+          <div class="flex space-x-2 items-center">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 hover:text-[#4f46e5]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </span>
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 hover:text-[#4f46e5]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"
+                />
+              </svg>
+            </span>
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-columns"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2zm8.5 0v8H15V2H8.5zm0 9v3H15v-3H8.5zm-1-9H1v3h6.5V2zM1 14h6.5V6H1v8z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="items-center flex space-x-2 px-4">
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-[#6b7280] hover:text-[#4f46e5]"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25"
+              />
+            </svg>
+          </span>
+          <span>Newest</span>
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 hover:text-[#4f46e5]"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8">
+        <div class="" *ngFor="let product of products; let i = index">
+          <div
+            class="relative group h-[430px] sm:h-[430px]"
+            [routerLink]="'/books-detail/' + product._id"
+          >
+            <div
+              class="absolute inset-0 opacity-100 group-hover:opacity-0 shadow-lg h-[400px] space-y-3 py-5 rounded-lg text-center"
+            >
+              <div
+                class="relative w-[200px] h-[260px] text-center mx-auto px-2"
+              >
+                <img
+                  src="{{ product.images[0].large_url }}"
+                  alt=""
+                  class="rounded-lg w-[200px] h-[250px]"
+                />
+              </div>
+              <div class="absolute bg-white py-2 px-2 rounded-lg end-2 top-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="#4f46e5"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xs font-bold">{{ product.name }}</h3>
+              <div class="text-[#4f46e5]">
+                <span>{{ product.brand.name }}</span>
+              </div>
+              <div class="flex gap-0.5 justify-center text-yellow-700">
+                <svg
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+
+                <svg
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+
+                <svg
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+
+                <svg
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+
+                <svg
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-100 shadow-lg shadow-indigo-500/50 space-y-3 py-5 rounded-lg text-center"
+            >
+              <div
+                class="relative w-[200px] h-[260px] text-center mx-auto px-2"
+              >
+                <img
+                  src="{{ product.images[0].large_url }}"
+                  alt=""
+                  class="rounded-lg w-[200px] h-[250px]"
+                />
+              </div>
+              <div class="absolute bg-white py-2 px-2 rounded-lg end-2 top-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="#4f46e5"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xs font-bold">{{ product.name }}</h3>
+              <div class="space-x-2">
+                <span class="text-[#4f46e5] font-bold text-lg">{{
+                  product.price | currencyFormat
+                }}</span>
+                <span
+                  ><s class="text-gray-300">{{
+                    product.original_price | currencyFormat
+                  }}</s></span
+                >
+              </div>
+              <button
+                class="px-10 py-3 bg-[#4f46e5] rounded-xl mx-auto text-white flex items-center space-x-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                  />
+                </svg>
+
+                <span class="text-[14px]">Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="grid grid-cols-5 gap-4 max-w-6xl">
+    <div class="col-span-1 space-y-3">
+      <button
+        class="w-full rounded-md py-2 bg-[#4f46e5] text-white font-semibold"
+      >
+        Refine Search
+      </button>
+      <button
+        class="w-full rounded-md py-2 bg-white text-gray-500 border border-gray-300 font-semibold"
+      >
+        Reset Filter
+      </button>
+    </div>
+    <div class="flex items-center justify-between col-span-4">
+      <div class="">
+        <span class="text-gray-600 text-base font-semibold"
+          >Showing 12 of 50 data</span
+        >
+      </div>
+      <div class="">
+        <ol class="flex justify-center gap-1 text-xs font-medium">
+          <li>
+            <a
+              href="#"
+              class="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 rtl:rotate-160"
+            >
+              <span class="sr-only">Prev Page</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-3 w-3"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="block h-8 w-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900"
+            >
+              1
+            </a>
+          </li>
+
+          <li
+            class="block h-8 w-8 rounded border-[#4f46e5] bg-[#4f46e5] text-center leading-8 text-white"
+          >
+            2
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="block h-8 w-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900"
+            >
+              3
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="block h-8 w-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900"
+            >
+              4
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 rtl:rotate-160"
+            >
+              <span class="sr-only">Next Page</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-3 w-3"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto">
+    <div class="">
+      <h2 class="text-3xl font-bold my-10">Books on Sale</h2>
+    </div>
+    <div class="grid grid-cols-6 gap-6 mx-auto">
+      <div class="relative w-[160px]">
+        <div class="relative">
+          <img
+            srcset="https://www.vinabook.com/images/detailed/358/P91250Mnha.jpg"
+            alt=""
+            class="rounded-lg"
+          />
+        </div>
+        <div
+          class="absolute top-4 bg-orange-500 text-white text-sm px-2 py-1 font-semibold rounded-r-xl"
+        >
+          -30%
+        </div>
+        <div class="space-y-1 mt-2">
+          <h3 class="text-base font-bold">Truyện ngắn</h3>
+          <div class="text-[#4f46e5] text-[10px]">
+            <span>DRAMA, </span>
+            <span>WAR</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex text-orange-500 space-x-1">
+              <svg
+                class="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <span>4.7</span>
+            </div>
+            <div class="space-x-2">
+              <span class="text-[#4f46e5] text-base">$45</span>
+              <span><s class="text-gray-300">$99</s></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative w-[160px]">
+        <div class="relative">
+          <img
+            srcset="https://www.vinabook.com/images/detailed/358/P91250Mnha.jpg"
+            alt=""
+            class="rounded-lg"
+          />
+        </div>
+        <div
+          class="absolute top-4 bg-orange-500 text-white text-sm px-2 py-1 font-semibold rounded-r-xl"
+        >
+          -30%
+        </div>
+        <div class="space-y-1 mt-2">
+          <h3 class="text-base font-bold">Truyện ngắn</h3>
+          <div class="text-[#4f46e5] text-[10px]">
+            <span>DRAMA, </span>
+            <span>WAR</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex text-orange-500 space-x-1">
+              <svg
+                class="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <span>4.7</span>
+            </div>
+            <div class="space-x-2">
+              <span class="text-[#4f46e5] text-base">$45</span>
+              <span><s class="text-gray-300">$99</s></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative w-[160px]">
+        <div class="relative">
+          <img
+            srcset="https://www.vinabook.com/images/detailed/358/P91250Mnha.jpg"
+            alt=""
+            class="rounded-lg"
+          />
+        </div>
+        <div
+          class="absolute top-4 bg-orange-500 text-white text-sm px-2 py-1 font-semibold rounded-r-xl"
+        >
+          -30%
+        </div>
+        <div class="space-y-1 mt-2">
+          <h3 class="text-base font-bold">Truyện ngắn</h3>
+          <div class="text-[#4f46e5] text-[10px]">
+            <span>DRAMA, </span>
+            <span>WAR</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex text-orange-500 space-x-1">
+              <svg
+                class="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <span>4.7</span>
+            </div>
+            <div class="space-x-2">
+              <span class="text-[#4f46e5] text-base">$45</span>
+              <span><s class="text-gray-300">$99</s></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative w-[160px]">
+        <div class="relative">
+          <img
+            srcset="https://www.vinabook.com/images/detailed/358/P91250Mnha.jpg"
+            alt=""
+            class="rounded-lg"
+          />
+        </div>
+        <div
+          class="absolute top-4 bg-orange-500 text-white text-sm px-2 py-1 font-semibold rounded-r-xl"
+        >
+          -30%
+        </div>
+        <div class="space-y-1 mt-2">
+          <h3 class="text-base font-bold">Truyện ngắn</h3>
+          <div class="text-[#4f46e5] text-[10px]">
+            <span>DRAMA, </span>
+            <span>WAR</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex text-orange-500 space-x-1">
+              <svg
+                class="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <span>4.7</span>
+            </div>
+            <div class="space-x-2">
+              <span class="text-[#4f46e5] text-base">$45</span>
+              <span><s class="text-gray-300">$99</s></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative w-[160px]">
+        <div class="relative">
+          <img
+            srcset="https://www.vinabook.com/images/detailed/358/P91250Mnha.jpg"
+            alt=""
+            class="rounded-lg"
+          />
+        </div>
+        <div
+          class="absolute top-4 bg-orange-500 text-white text-sm px-2 py-1 font-semibold rounded-r-xl"
+        >
+          -30%
+        </div>
+        <div class="space-y-1 mt-2">
+          <h3 class="text-base font-bold">Truyện ngắn</h3>
+          <div class="text-[#4f46e5] text-[10px]">
+            <span>DRAMA, </span>
+            <span>WAR</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex text-orange-500 space-x-1">
+              <svg
+                class="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <span>4.7</span>
+            </div>
+            <div class="space-x-2">
+              <span class="text-[#4f46e5] text-base">$45</span>
+              <span><s class="text-gray-300">$99</s></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative w-[160px]">
+        <div class="relative">
+          <img
+            srcset="https://www.vinabook.com/images/detailed/358/P91250Mnha.jpg"
+            alt=""
+            class="rounded-lg"
+          />
+        </div>
+        <div
+          class="absolute top-4 bg-orange-500 text-white text-sm px-2 py-1 font-semibold rounded-r-xl"
+        >
+          -30%
+        </div>
+        <div class="space-y-1 mt-2">
+          <h3 class="text-base font-bold">Truyện ngắn</h3>
+          <div class="text-[#4f46e5] text-[10px]">
+            <span>DRAMA, </span>
+            <span>WAR</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex text-orange-500 space-x-1">
+              <svg
+                class="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <span>4.7</span>
+            </div>
+            <div class="space-x-2">
+              <span class="text-[#4f46e5] text-base">$45</span>
+              <span><s class="text-gray-300">$99</s></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-4 gap-5 mt-20 mb-10">
+    <a
+      class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+      href="/accountant"
+    >
+      <span class="inline-block rounded-lg bg-gray-50 p-3">
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          ></path>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          ></path>
+        </svg>
+      </span>
+
+      <h2 class="mt-2 font-bold">Accountant</h2>
+
+      <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+    </a>
+    <a
+      class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+      href="/accountant"
+    >
+      <span class="inline-block rounded-lg bg-gray-50 p-3">
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          ></path>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          ></path>
+        </svg>
+      </span>
+
+      <h2 class="mt-2 font-bold">Accountant</h2>
+
+      <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+    </a>
+    <a
+      class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+      href="/accountant"
+    >
+      <span class="inline-block rounded-lg bg-gray-50 p-3">
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          ></path>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          ></path>
+        </svg>
+      </span>
+
+      <h2 class="mt-2 font-bold">Accountant</h2>
+
+      <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+    </a>
+    <a
+      class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+      href="/accountant"
+    >
+      <span class="inline-block rounded-lg bg-gray-50 p-3">
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          ></path>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          ></path>
+        </svg>
+      </span>
+
+      <h2 class="mt-2 font-bold">Accountant</h2>
+
+      <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+    </a>
+  </div>
+  <section
+    class="py-10 bg-gray-100 sm:py-16 lg:py-24 shadow-lg shadow-indigo-500/50"
+  >
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2
+          class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+        >
+          Get full access to Celebration
+        </h2>
+        <p
+          class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600"
+        >
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+
+      <form action="#" method="POST" class="max-w-xl mx-auto mt-12">
+        <div class="flex flex-col items-center sm:flex-row sm:justify-center">
+          <div class="flex-1 w-full min-w-0 px-4 sm:px-0">
+            <label for="email" class="sr-only"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email to get started"
+              class="block w-full px-4 py-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-transparent rounded-md caret-indigo-600 focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600"
+              required
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="inline-flex items-center justify-center w-auto px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-indigo-600 border border-transparent rounded-md sm:ml-4 sm:mt-0 sm:w-auto hover:bg-indigo-700 focus:bg-indigo-700"
+          >
+            Get instant access
+            <svg
+              class="w-5 h-5 ml-3 -mr-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="flex items-center justify-center px-8 mt-8 sm:px-0">
+        <svg
+          class="flex-shrink-0 w-5 h-5 text-gray-600"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+          />
+        </svg>
+        <span class="ml-2 text-sm text-gray-600">
+          Your data is complely secured with us. We don’t share with anyone.
+        </span>
+      </div>
+    </div>
+  </section>
+</div>
