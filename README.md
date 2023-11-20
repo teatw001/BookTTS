@@ -4,7 +4,7 @@
 - BE: NodeJs
 
 <!-- --------------------BE-------------------- -->
-
+---------------- BE: NodeJs--------------------
 - Auth
 
   - getAll: Lấy tất cả người dùng ( admin )
@@ -58,6 +58,7 @@
 
 
 <!-- --------------------FE - Angular-------------------- -->
+--------------FE - Angular----------
 - sản phẩm, chi tiết sản phẩm
 - đăng nhập, đăng ký, phân quyền
 - giỏ hàng, xóa sản phẩm trong giỏ
