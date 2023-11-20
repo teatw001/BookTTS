@@ -55,7 +55,7 @@ export class CheckoutComponent {
       this.orderService.addOrder(order).subscribe(
         (result) => {
           this.message.create('success', 'Đơn hàng đã được đặt thành công.');
-          sessionStorage.removeItem('cart');
+          this.cartservice.clearCart();
           this.router.navigate(['/']);
         },
         (error) => {

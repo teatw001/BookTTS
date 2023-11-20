@@ -12,7 +12,8 @@ import { CartService } from 'src/app/service/cart.service';
 export class DetailComponent {
   form!: FormGroup;
   products: IProduct[] = [];
-  product!: IProduct;
+  productbyID!: IProduct;
+  productSameType: IProduct[] = [];
   constructor(
     private ps: BooksService,
     private fb: FormBuilder,
@@ -24,17 +25,20 @@ export class DetailComponent {
     this.route.paramMap.subscribe((params: any) => {
       const id = params.get('id');
       this.ps.getProduct(id).subscribe((data) => {
-        this.product = data;
+        this.productbyID = data;
       });
     });
     this.productService.getProducts().subscribe(
       (data) => {
         this.products = data;
+        this.productSameType = this.products.filter(
+          (product) => product.brand._id === this.productbyID.brand._id
+        );
       },
       (error) => console.log(error)
     );
   }
- 
+
   displayedWords = 80; // Số từ được hiển thị ban đầu
   additionalWords = 30; // Số từ thêm mỗi lần khi ấn "Xem thêm"
   addToCart(product: IProduct) {

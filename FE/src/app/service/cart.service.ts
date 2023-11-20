@@ -29,8 +29,12 @@ export class CartService {
     this.updateCart2();
     sessionStorage.setItem('cart', JSON.stringify(this.items));
   }
-
+  updateCart2(): void {
+    this.cartSubject.next(this.items);
+    sessionStorage.setItem('cart', JSON.stringify(this.items));
+  }
   getItem() {
+    this.updateCart2();
     return this.items;
   }
   updateCart(cart: ICart[]): void {
@@ -39,10 +43,7 @@ export class CartService {
     // Update sessionStorage when the cart is updated
     sessionStorage.setItem('cart', JSON.stringify(this.items));
   }
-  updateCart2(): void {
-    this.cartSubject.next(this.items);
-    sessionStorage.setItem('cart', JSON.stringify(this.items));
-  }
+
   clearCart() {
     this.items = [];
     sessionStorage.removeItem('cart');
