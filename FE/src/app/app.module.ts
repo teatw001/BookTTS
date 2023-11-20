@@ -167,6 +167,7 @@ import { FormRegisterComponent } from './pages/Clients/register/register.compone
 import { CommonModule } from '@angular/common';
 import { CheckoutComponent } from './pages/Clients/checkout/checkout.component';
 import { OrderComponent } from './pages/Admin/Order/listorder';
+import { RoundPipe } from './components/Clients/pipeformatNumber';
 
 const icons = [BellOutline, UserOutline];
 
@@ -179,6 +180,7 @@ const iconss: IconDefinition[] = Object.keys(antDesignIcons).map(
 @NgModule({
   declarations: [
     AppComponent,
+    RoundPipe,
     HeaderComponent,
     NzDemoCollapseBasicComponent,
     NzDemoCarouselLoopComponent,

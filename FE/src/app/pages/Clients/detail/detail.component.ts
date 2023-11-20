@@ -11,13 +11,14 @@ import { CartService } from 'src/app/service/cart.service';
 })
 export class DetailComponent {
   form!: FormGroup;
-
+  products: IProduct[] = [];
   product!: IProduct;
   constructor(
     private ps: BooksService,
     private fb: FormBuilder,
     private route: ActivatedRoute,
     private router: Router,
+    private productService: BooksService,
     private cartservice: CartService
   ) {
     this.route.paramMap.subscribe((params: any) => {
@@ -26,7 +27,14 @@ export class DetailComponent {
         this.product = data;
       });
     });
+    this.productService.getProducts().subscribe(
+      (data) => {
+        this.products = data;
+      },
+      (error) => console.log(error)
+    );
   }
+ 
   displayedWords = 80; // Số từ được hiển thị ban đầu
   additionalWords = 30; // Số từ thêm mỗi lần khi ấn "Xem thêm"
   addToCart(product: IProduct) {

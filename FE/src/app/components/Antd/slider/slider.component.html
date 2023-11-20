@@ -2,146 +2,23 @@
   <div class="container">
     <div #slide>
       <div
+        *ngFor="let product of products"
         class="item"
-        style="background-image: url('./assets/book1.png')"
-      ></div>
-      <div class="item" style="background-image: url('./assets/book2.jpg')">
+        [style.backgroundImage]="'url(' + product.images[0].poster + ')'"
+      >
         <div
           class="content absolute top-[50%] w-[200px] py-2 px-3 text-sm font-semibold rounded-md shadow-lg shadow-indigo-500/40 focus:outline-none text-left p-0 text-[#eee] left-[100px] md:left-[200px] -translate-x-1/2 -translate-y-1/2 hidden"
         >
-          <div class="name">LUNDEV</div>
+          <div class="name text-lg text-black">{{ product.name }}</div>
           <div class="des">
-            Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
+            {{
+              product.short_description
+                | truncate : displayedWords : displayedWords + additionalWords
+            }}
           </div>
           <button
+            [routerLink]="'/books-detail/' + product._id"
             class="forwards showcontent ease-in-out mt-3 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
-          >
-            See more
-          </button>
-        </div>
-      </div>
-      <div class="item" style="background-image: url('./assets/book3.jpg')">
-        <div
-          class="content content absolute top-[50%] w-[100px] text-left p-0 text-[#eee] left-[100px] -translate-x-1/2 -translate-y-1/2 hidden"
-        >
-          <div class="name">LUNDEV</div>
-          <div class="des">
-            Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
-          </div>
-          <button
-            class="forwards showcontent ease-in-out mt-3 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
-          >
-            See more
-          </button>
-        </div>
-      </div>
-      <div class="item" style="background-image: url('./assets/book2.jpg')">
-        <div
-          class="content absolute top-[50%] w-[200px] py-2 px-3 text-sm font-semibold rounded-md shadow-lg shadow-indigo-500/40 focus:outline-none text-left p-0 text-[#eee] left-[100px] md:left-[200px] -translate-x-1/2 -translate-y-1/2 hidden"
-        >
-          <div class="name">LUNDEV</div>
-          <div class="des">
-            Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
-          </div>
-          <button
-            class="forwards showcontent ease-in-out mt-3 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
-          >
-            See more
-          </button>
-        </div>
-      </div>
-      <div class="item" style="background-image: url('./assets/book2.jpg')">
-        <div
-          class="content absolute top-[50%] w-[200px] py-2 px-3 text-sm font-semibold rounded-md shadow-lg shadow-indigo-500/40 focus:outline-none text-left p-0 text-[#eee] left-[100px] md:left-[200px] -translate-x-1/2 -translate-y-1/2 hidden"
-        >
-          <div class="name">LUNDEV</div>
-          <div class="des">
-            Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
-          </div>
-          <button
-            class="forwards showcontent ease-in-out mt-3 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
-          >
-            See more
-          </button>
-        </div>
-      </div>
-      <div class="item" style="background-image: url('./assets/book2.jpg')">
-        <div
-          class="content absolute top-[50%] w-[200px] py-2 px-3 text-sm font-semibold rounded-md shadow-lg shadow-indigo-500/40 focus:outline-none text-left p-0 text-[#eee] left-[100px] md:left-[200px] -translate-x-1/2 -translate-y-1/2 hidden"
-        >
-          <div class="name">LUNDEV</div>
-          <div class="des">
-            Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
-          </div>
-          <button
-            class="forwards showcontent ease-in-out mt-3 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
-          >
-            See more
-          </button>
-        </div>
-      </div>
-      <div class="item" style="background-image: url('./assets/book2.jpg')">
-        <div
-          class="content absolute top-[50%] w-[200px] py-2 px-3 text-sm font-semibold rounded-md shadow-lg shadow-indigo-500/40 focus:outline-none text-left p-0 text-[#eee] left-[100px] md:left-[200px] -translate-x-1/2 -translate-y-1/2 hidden"
-        >
-          <div class="name">LUNDEV</div>
-          <div class="des">
-            Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
-          </div>
-          <button
-            class="forwards showcontent ease-in-out mt-3 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
-          >
-            See more
-          </button>
-        </div>
-      </div>
-      <div class="item" style="background-image: url('./assets/book2.jpg')">
-        <div
-          class="content absolute top-[50%] w-[200px] py-2 px-3 text-sm font-semibold rounded-md shadow-lg shadow-indigo-500/40 focus:outline-none text-left p-0 text-[#eee] left-[100px] md:left-[200px] -translate-x-1/2 -translate-y-1/2 hidden"
-        >
-          <div class="name">LUNDEV</div>
-          <div class="des">
-            Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
-          </div>
-          <button
-            class="forwards showcontent ease-in-out mt-3 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
-          >
-            See more
-          </button>
-        </div>
-      </div>
-      <div class="item" style="background-image: url('./assets/book.jpg')">
-        <div
-          class="content content absolute top-[50%] w-[100px] text-left p-0 text-[#eee] left-[100px] -translate-x-1/2 -translate-y-1/2 hidden"
-        >
-          <div class="name">LUNDEV</div>
-          <div class="des">
-            Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
-          </div>
-          <button>See more</button>
-        </div>
-      </div>
-      <div class="item" style="background-image: url(5jpg)">
-        <div
-          class="content content absolute top-[50%] w-[100px] text-left p-0 text-[#eee] left-[100px] -translate-x-1/2 -translate-y-1/2 hidden"
-        >
-          <div class="name">LUNDEV</div>
-          <div class="des">
-            Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
-          </div>
-          <button>See more</button>
-        </div>
-      </div>
-      <div class="item" style="background-image: url(6jpg)">
-        <div
-          class="content content absolute top-[50%] w-[100px] text-left p-0 text-[#eee] left-[100px] -translate-x-1/2 -translate-y-1/2 hidden"
-        >
-          <div class="name">LUNDEV</div>
-          <div class="des">
-            Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
-          </div>
-          <button
-            class="mt-3 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
           >
             See more
           </button>

@@ -11,6 +11,7 @@ import { CartService } from 'src/app/service/cart.service';
 export class BooksComponent {
   products: IProduct[] = [];
   currentIndex: number = 0;
+  productOnSale: IProduct[] = []
   responsiveOptions: any[] | undefined;
   constructor(
     private productService: BooksService,
@@ -19,10 +20,12 @@ export class BooksComponent {
     this.productService.getProducts().subscribe(
       (data) => {
         this.products = data;
+        this.productOnSale = this.products.filter((product) => product.isInFlashSale === true);
       },
       (error) => console.log(error)
     );
   }
+ 
   addToCart(product: IProduct) {
     this.cartservice.addtoCart(product);
     console.log(this.cartservice.getItem());

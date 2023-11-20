@@ -8,7 +8,7 @@ import orderRouter from "./router/order";
 import commentRouter from "./router/comment";
 import authRouter from "./router/auth";
 import forgotRouter from "./router/forgot";
-
+import payment from "./router/paymentvnpay";
 import cors from "cors";
 import paymentRouter from "./router/paymentvnpay";
 
@@ -25,7 +25,7 @@ app.use("/order", orderRouter);
 app.use("/comment", commentRouter);
 app.use("/", forgotRouter);
 app.use("/", authRouter);
-
+app.use("/", payment);
 mongoose.connect(process.env.URI);
 
 export const viteNodeApp = app;

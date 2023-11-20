@@ -1,4 +1,6 @@
 import { Component, ElementRef, ViewChild, Renderer2 } from '@angular/core';
+import { IProduct } from 'src/app/interfaces/model';
+import { BooksService } from 'src/app/service/books.service';
 
 @Component({
   selector: 'app-slider',
@@ -9,8 +11,20 @@ export class SliderComponent {
   @ViewChild('slide') slideElement!: ElementRef;
   @ViewChild('next') nextButton!: ElementRef;
   @ViewChild('prev') prevButton!: ElementRef;
-
-  constructor(private renderer: Renderer2) {}
+  displayedWords = 10; // Số từ được hiển thị ban đầu
+  additionalWords = 10;
+  products: IProduct[] = [];
+  constructor(
+    private renderer: Renderer2,
+    private productService: BooksService
+  ) {
+    this.productService.getProducts().subscribe(
+      (data) => {
+        this.products = data;
+      },
+      (error) => console.log(error)
+    );
+  }
 
   ngAfterViewInit() {
     this.renderer.listen(this.nextButton.nativeElement, 'click', () => {
