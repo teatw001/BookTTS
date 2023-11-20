@@ -23,13 +23,11 @@ import { Component } from '@angular/core';
       [nzClosable]="false"
       [nzVisible]="visible"
       nzPlacement="left"
-      nzTitle="Basic Drawer"
+      nzTitle="Sản phẩm"
       (nzOnClose)="close()"
     >
       <ng-container *nzDrawerContent>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <button routerLink="/books">Books</button>
       </ng-container>
     </nz-drawer>
   `,
