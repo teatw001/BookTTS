@@ -7,14 +7,6 @@ import { Component } from '@angular/core';
       <nz-sider nzCollapsible nzWidth="200px">
         <div class="logo"></div>
         <ul nz-menu nzTheme="dark" nzMode="inline">
-          <li nz-menu-item>
-            <span nz-icon nzType="pie-chart"></span>
-            <span>Option 1</span>
-          </li>
-          <li nz-menu-item>
-            <span nz-icon nzType="desktop"></span>
-            <span>Option 2</span>
-          </li>
           <li nz-submenu nzTitle="Books" nzIcon="book">
             <ul>
               <li nz-menu-item routerLink="/admin/product">List</li>
@@ -31,6 +23,11 @@ import { Component } from '@angular/core';
               <li nz-menu-item routerLink="/admin/user">List</li>
             </ul>
           </li>
+          <li nz-submenu nzTitle="Order" nzIcon="inbox">
+            <ul>
+              <li nz-menu-item routerLink="/admin/order">List</li>
+            </ul>
+          </li>
         </ul>
       </nz-sider>
       <nz-layout>
@@ -40,11 +37,10 @@ import { Component } from '@angular/core';
             <nz-breadcrumb-item>User</nz-breadcrumb-item>
             <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
           </nz-breadcrumb>
-          <div class="inner-content h-screen">
+          <div class="inner-content h-full">
             <router-outlet></router-outlet>
           </div>
         </nz-content>
-        <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
       </nz-layout>
     </nz-layout>
   `,

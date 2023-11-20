@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ICategory } from '../interfaces/model';
 
@@ -14,19 +14,28 @@ export class CateService {
   getCategory(id: any): Observable<ICategory> {
     return this.http.get<ICategory>('http://localhost:8080/category/' + id);
   }
-  deleteCategory(id: number | string): Observable<ICategory> {
-    return this.http.delete<ICategory>('http://localhost:8080/category/' + id);
+  deleteCategory(id: number | string,token: string): Observable<ICategory> {
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.delete<ICategory>('http://localhost:8080/category/' + id,{
+      headers,
+    });
   }
-  addCategory(category: any): Observable<ICategory> {
+  addCategory(category: any,token: string): Observable<ICategory> {
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.post<ICategory>(
       'http://localhost:8080/category',
-      category
+      category,{
+        headers,
+      }
     );
   }
-  updateCategory(category: ICategory): Observable<ICategory> {
+  updateCategory(category: ICategory,token: string): Observable<ICategory> {
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.put<ICategory>(
       `http://localhost:8080/category/${category._id}`,
-      category
+      category,{
+        headers,
+      }
     );
   }
 }

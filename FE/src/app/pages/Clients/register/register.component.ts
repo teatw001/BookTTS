@@ -10,6 +10,7 @@ import {
 } from '@angular/forms';
 
 import { NzFormTooltipIcon } from 'ng-zorro-antd/form';
+import { NzMessageService } from 'ng-zorro-antd/message';
 import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
@@ -183,7 +184,11 @@ export class FormRegisterComponent {
     e.preventDefault();
   }
 
-  constructor(private fb: NonNullableFormBuilder, private auth: AuthService) {
+  constructor(
+    private fb: NonNullableFormBuilder,
+    private auth: AuthService,
+    private message: NzMessageService
+  ) {
     this.validateForm = this.fb.group({
       email: ['', [Validators.email, Validators.required]],
       password: ['', [Validators.required]],
@@ -199,12 +204,11 @@ export class FormRegisterComponent {
       const formData = this.validateForm.value;
       this.auth.register(formData).subscribe(
         (data) => {
-          console.log('Registration successful:', data);
-          // Có thể thêm xử lý chuyển hướng hoặc hiển thị thông báo thành công ở đây
+          this.message.success(`Đăng kí thành công`);
         },
         (error) => {
           console.error('Registration failed:', error);
-          // Có thể thêm xử lý hiển thị thông báo lỗi ở đây
+          this.message.error(`Đăng kí thất bại`);
         }
       );
     } else {

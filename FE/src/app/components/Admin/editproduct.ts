@@ -240,6 +240,7 @@ export class EditProductComponent implements OnInit {
   brandOptions: { value: string; label: string }[] = [];
   onHandleSubmit = () => {
     if (this.validateForm.valid && this.product) {
+      const token = localStorage.getItem('token');
       const updatedProduct: any = {
         ...this.product,
         name: this.validateForm.value.name || '',
@@ -268,7 +269,7 @@ export class EditProductComponent implements OnInit {
         // Add similar lines for other form controls
       };
 
-      this.productService.updateProduct(updatedProduct).subscribe({
+      this.productService.updateProduct(updatedProduct,token).subscribe({
         next: (product) => {
           this.message.success(`Cập nhật sản phẩm thành công: ${product.name}`);
           this.router.navigate(['/admin/product']);

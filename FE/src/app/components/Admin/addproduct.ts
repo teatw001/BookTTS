@@ -236,10 +236,27 @@ export class ProductAddComponent implements OnInit {
   brandOptions: { value: string; label: string }[] = [];
   onHandleSubmit = () => {
     if (this.validateForm.valid) {
-      const product = this.validateForm.value;
-      this.productService.addProduct(product).subscribe((product) => {
-        this.message.success(`Thêm sản phẩm thành công`);
-      });
+      // Retrieve token from localStorage
+      const token = localStorage.getItem('token');
+
+      if (token) {
+      
+
+        const product = this.validateForm.value;
+
+        // Make the request with the headers
+        this.productService.addProduct(product, token).subscribe(
+          (product) => {
+            this.message.success(`Thêm sản phẩm thành công`);
+          },
+          (error) => {
+            console.error('Error adding product:', error);
+          }
+        );
+      } else {
+        // Handle the case where the token is not found in localStorage
+        this.message.error('Token not found. Please log in.');
+      }
     } else {
       this.message.error('Vui lòng không bỏ trống các trường dữ liệu');
     }

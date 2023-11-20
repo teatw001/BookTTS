@@ -41,7 +41,8 @@
         </p>
         <span class="font-semibold text-base">{{ product.authors }}</span>
         <div class="flex justify-between items-center">
-          <div
+          <button
+            (click)="addToCart(product)"
             class="add-to-cart bg-[#4f46e5] rounded-xl py-2 px-3 flex space-x-2 items-center justify-between"
           >
             <svg
@@ -60,7 +61,7 @@
             </svg>
 
             <span class="text-[12px] font-semibold text-white">Thêm </span>
-          </div>
+          </button>
           <div class="price space-x-2">
             <span>{{ product.price | currencyFormat }}</span>
             <span

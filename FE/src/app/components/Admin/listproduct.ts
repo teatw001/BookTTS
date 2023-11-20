@@ -69,7 +69,8 @@ export class ListProductComponent implements OnInit {
     });
   }
   delete(id: string) {
-    this.productService.deleteProduct(id).subscribe((product) => {
+    const token: string = localStorage.getItem('token') || '';
+    this.productService.deleteProduct(id,token).subscribe((product) => {
       this.products = this.products.filter((product) => product._id !== id);
       this.message.success(`Xóa sản phẩm thành công`);
     });

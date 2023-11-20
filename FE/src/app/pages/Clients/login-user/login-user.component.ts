@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { UserService } from 'src/app/service/user.service';
+import { Component, OnInit } from '@angular/core';
 import {
   FormControl,
   FormGroup,
   NonNullableFormBuilder,
   Validators,
 } from '@angular/forms';
+import { IUser } from 'src/app/interfaces/model';
 import { AuthService } from 'src/app/service/auth.service';
+import { Router } from '@angular/router';
+import { NzMessageService } from 'ng-zorro-antd/message';
 
 @Component({
   selector: 'login-user',
@@ -92,7 +96,8 @@ import { AuthService } from 'src/app/service/auth.service';
     `,
   ],
 })
-export class LoginUserComponent {
+export class LoginUserComponent implements OnInit {
+  users: any;
   validateForm: FormGroup<{
     email: FormControl<string>;
     password: FormControl<string>;
@@ -103,18 +108,29 @@ export class LoginUserComponent {
 
   constructor(
     private fb: NonNullableFormBuilder,
-    private authService: AuthService
+    private authService: AuthService,
+    private userService: UserService,
+    private router: Router,
+    private message: NzMessageService
   ) {}
 
   submitForm(): void {
     if (this.validateForm.valid) {
       const { email, password } = this.validateForm.value;
 
-      // Kiểm tra nếu cả email và password có giá trị
       if (email && password) {
         this.authService.login(email, password).subscribe(
           (data) => {
             localStorage.setItem('token', data.accessToken);
+            localStorage.setItem('user', JSON.stringify(data.user));
+
+            this.showSuccessMessage();
+
+            if (data.user.role === 'Admin') {
+              this.router.navigate(['/admin']);
+            } else {
+              this.router.navigate(['/']);
+            }
           },
           (error) => {
             console.error('Login failed:', error);
@@ -132,5 +148,13 @@ export class LoginUserComponent {
         }
       });
     }
+  }
+  showSuccessMessage() {
+    this.message.create('success', 'Đăng nhập thành công');
+  }
+  ngOnInit(): void {
+    this.userService.getUsers().subscribe((data) => {
+      this.users = data;
+    });
   }
 }

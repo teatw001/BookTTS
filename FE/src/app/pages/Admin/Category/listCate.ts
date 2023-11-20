@@ -114,8 +114,8 @@ export class ListCateComponent implements OnInit {
   saveRow(data: ICategory): void {
     if (data && data._id) {
       console.log('Dữ liệu đã chỉnh sửa:', data);
-
-      this.cateService.updateCategory(data).subscribe({
+      const token: string = localStorage.getItem('token') || '';
+      this.cateService.updateCategory(data,token).subscribe({
         next: (cate) => {
           this.message.success(`Cập nhật sản phẩm thành công`);
           this.stopEdit();
@@ -134,8 +134,8 @@ export class ListCateComponent implements OnInit {
       name: `New Row ${this.i}`,
       slug: `new-slug-${this.i}`,
     };
-
-    this.cateService.addCategory(newRow).subscribe(() => {
+    const token: string = localStorage.getItem('token') || '';
+    this.cateService.addCategory(newRow,token).subscribe(() => {
       this.message.success(`Thêm sản phẩm thành công`);
       this.reloadCategory();
     });
@@ -144,7 +144,8 @@ export class ListCateComponent implements OnInit {
   }
 
   deleteRow(id: string): void {
-    this.cateService.deleteCategory(id).subscribe(() => {
+    const token: string = localStorage.getItem('token') || '';
+    this.cateService.deleteCategory(id,token).subscribe(() => {
       this.message.success(`Xóa sản phẩm thành công`);
       this.reloadCategory();
     });

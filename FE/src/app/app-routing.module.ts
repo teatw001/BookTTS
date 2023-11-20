@@ -11,6 +11,9 @@ import { ProductAddComponent } from './components/Admin/addproduct';
 import { EditProductComponent } from './components/Admin/editproduct';
 import { ListCateComponent } from './pages/Admin/Category/listCate';
 import { UserComponent } from './pages/Admin/User/listUser';
+import { AdminGuard } from './admin.guard';
+import { CheckoutComponent } from './pages/Clients/checkout/checkout.component';
+import { OrderComponent } from './pages/Admin/Order/listorder';
 
 const routes: Routes = [
   {
@@ -20,6 +23,7 @@ const routes: Routes = [
       { path: '', component: HomepageComponent },
       { path: 'books', component: BooksComponent },
       { path: 'books-detail/:id', component: DetailComponent },
+      { path: 'checkout', component: CheckoutComponent },
     ],
   },
 
@@ -28,12 +32,14 @@ const routes: Routes = [
   {
     path: 'admin',
     component: LayoutAdminComponent,
+    canActivate: [AdminGuard],
     children: [
       // { path: 'dashboard', component: DashboardComponent },
       { path: 'product', component: ListProductComponent },
       { path: 'product/add', component: ProductAddComponent },
       { path: 'product-update/:id', component: EditProductComponent },
       { path: 'cate', component: ListCateComponent },
+      { path: 'order', component: OrderComponent },
       { path: 'user', component: UserComponent },
     ],
   },

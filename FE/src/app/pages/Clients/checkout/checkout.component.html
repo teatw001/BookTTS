@@ -1,0 +1,157 @@
+<main class="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+  <div class="mb-8">
+    <span
+      class="block font-medium text-lg text-red-600 border-b-2 border-red-600"
+      >Địa Chỉ</span
+    >
+    <div
+      class="flex items-center justify-between border border-gray-200 rounded-lg px-4 py-3 mt-4"
+    >
+      <div class="flex items-center">
+        <div class="flex items-center mt-3">
+          <p class="font-medium text-base">{{ user.name }}</p>
+          <p class="text-gray-500 text-sm ml-1">{{ user.phone }}</p>
+          <p class="text-gray-500 text-sm ml-3">{{ user.address }}</p>
+        </div>
+        <div class="text-red-500 border p-1 text-[10px] border-red-500 ml-3">
+          mặc định
+        </div>
+      </div>
+      <button
+        class="md:text-blue-500 md:text-sm md:hover:text-green-700 md:mt-2 pl-3 text-blue-500 hover:text-green-700 text-[10px]"
+      >
+        Thay đổi
+      </button>
+    </div>
+  </div>
+
+  <div class="mb-8 border rounded-[10px]">
+    <table class="min-w-full divide-y divide-gray-200 shadow-lg">
+      <thead>
+        <tr>
+          <th
+            scope="col"
+            class="py-3 font-medium text-center text-sm text-red-600 border-b-2 border-red-600"
+          >
+            Sản phẩm
+          </th>
+          <th
+            scope="col"
+            class="py-3 font-medium text-center text-sm text-red-600 border-b-2 border-red-600"
+          >
+            Giá
+          </th>
+          <th
+            scope="col"
+            class="py-3 font-medium text-center text-sm text-red-600 border-b-2 border-red-600"
+          >
+            Số lượng
+          </th>
+          <th
+            scope="col"
+            class="py-3 font-medium text-center text-sm text-red-600 border-b-2 border-red-600"
+          >
+            Thành tiền
+          </th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr *ngFor="let item of items">
+          <td class="md:py-4 md:flex md:space-x-4">
+            <img
+              [src]="item.image"
+              alt=""
+              class="w-16 h-16 object-cover rounded-lg ml-5 mr-2"
+            />
+            <div class="flex flex-col justify-center">
+              <span
+                class="md:font-medium md:text-sm text-xs ml-7 overflow-hidden"
+                >{{ item.product }}</span
+              >
+            </div>
+          </td>
+          <td class="py-4 font-medium text-center text-sm">
+            {{ item.price | currencyFormat }}
+          </td>
+          <td class="py-4 font-medium text-center text-sm">
+            {{ item.quantity }}
+          </td>
+          <td class="py-4 font-medium text-center text-sm">
+            {{ item.price * item.quantity | currencyFormat }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="mb-8 flex justify-end">
+    <span class="block text-gray-500 text-sm"
+      >Tổng số tiền:
+      <span class="text-red-500 text-lg ml-2">{{
+        getTotalPrice() | currencyFormat
+      }}</span></span
+    >
+  </div>
+  <div class="mb-8">
+    <span
+      class="block font-medium text-lg text-red-600 border-b-2 border-red-600"
+      >Phương thức thanh toán</span
+    >
+    <div class="mt-4 space-x-2">
+      <button
+        (click)="selectedPaymentMethod = 'Số dư'"
+        class="border border-gray-200 rounded-lg px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-600"
+      >
+        Số dư
+      </button>
+      <button
+        (click)="selectedPaymentMethod = 'Ngân hàng'"
+        class="border border-gray-200 rounded-lg px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-600"
+      >
+        Ngân hàng
+      </button>
+      <button
+        (click)="selectedPaymentMethod = 'Tiền mặt'"
+        class="border border-gray-200 rounded-lg px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-600"
+      >
+        Tiền mặt
+      </button>
+    </div>
+  </div>
+  <form #orderForm="ngForm">
+    <div class="mb-8">
+      <div class="grid justify-end gap-2 mb-2">
+        <div>
+          <span class="font-medium text-lg">Tổng tiền hàng:</span>
+          <span class="text-gray-500 text-lg pl-2">{{
+            getTotalPrice() | currencyFormat
+          }}</span>
+        </div>
+        <div>
+          <span class="font-medium text-lg">Phí vận chuyển:</span>
+          <span class="text-gray-500 text-lg pl-2">{{
+            getShippingFee() | currencyFormat
+          }}</span>
+        </div>
+        <div>
+          <span class="font-medium text-lg">Tổng thanh toán:</span>
+          <span class="text-red-500 text-lg pl-2">{{
+            getTotalPayment() | currencyFormat
+          }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="mb-8 flex justify-between items-center">
+      <span class="text-sm"
+        >Nhấn "Đặt hàng" đồng nghĩa với việc bạn đồng ý tuân theo Điều
+        khoản!</span
+      >
+      <button
+        (click)="submitOrder()"
+        class="px-4 py-2 font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+      >
+        Đặt hàng
+      </button>
+    </div>
+  </form>
+</main>

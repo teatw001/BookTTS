@@ -164,8 +164,9 @@ import { LoginComponent } from './components/Clients/header/component-child/logi
 import { TagsLoginComponent } from './components/Clients/header/component-child/tabsLogin';
 import { LoginUserComponent } from './pages/Clients/login-user/login-user.component';
 import { FormRegisterComponent } from './pages/Clients/register/register.component';
-
-
+import { CommonModule } from '@angular/common';
+import { CheckoutComponent } from './pages/Clients/checkout/checkout.component';
+import { OrderComponent } from './pages/Admin/Order/listorder';
 
 const icons = [BellOutline, UserOutline];
 
@@ -210,10 +211,11 @@ const iconss: IconDefinition[] = Object.keys(antDesignIcons).map(
     SearchComponent,
     ListCateComponent,
     MenuComponent,
+    OrderComponent,
     UserComponent,
-    
+
     LimitWordsPipe,
-   
+    CheckoutComponent,
     NzDemoDropdownEventComponent,
     DetailComponent,
     ProductAddComponent,
@@ -231,6 +233,7 @@ const iconss: IconDefinition[] = Object.keys(antDesignIcons).map(
     NzLayoutModule,
     NzTreeModule,
     AvatarModule,
+    CommonModule,
     AvatarGroupModule,
     BrowserModule,
     NzCheckboxModule,

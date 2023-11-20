@@ -1,32 +1,40 @@
 import jwt from "jsonwebtoken";
-import User from "../models/user";
-export const checkPermission = async (req, res, next) => {
-  if (!req.headers.authorization) {
-    return res.status(401).json({
-      message: "Bạn chưa đăng nhập",
-    });
-  }
-  const token = req.headers.authorization.split(" ")[1];
+import dotenv from "dotenv";
 
-  jwt.verify(token, "123456", async (error, decoded) => {
-    if (error instanceof jwt.JsonWebTokenError || !decoded || !decoded.id) {
+import User from "../models/user";
+
+dotenv.config();
+
+export const checkPermission = async (req, res, next) => {
+  try {
+    if (!req.headers.authorization) {
       return res.status(401).json({
-        message: "Token không hợp lệ",
+        message: "Bạn chưa đăng nhập",
       });
     }
+    const token = req.headers.authorization.split(" ")[1];
+
+    const decoded = jwt.verify(token, process.env.SECRET_KEY);
+
     const user = await User.findById(decoded.id);
-    if (user.role !== "admin") {
+    if (user.role !== "Admin") {
       return res.status(403).json({
-        message: "Bạn không có quyền truy cập tài nguyên này",
+        message: "Bạn không có quyền truy cập!",
       });
     }
 
     req.user = user;
     next();
-  });
+  } catch (err) {
+    if (err instanceof jwt.JsonWebTokenError) {
+      return res.status(401).json({
+        message: "Token không hợp lệ!",
+      });
+    } else {
+      console.error(err);
+      return res.status(500).json({
+        message: "Đã xảy ra lỗi!",
+      });
+    }
+  }
 };
-
-// B1: Kiểm tra đã đăng nhập chưa
-// B2: Token gửi lên có hợp lệ không?
-// B3: Dựa vào thông tin gửi lên, kiểm xem id đấy có quyền không?
-// B4: Nếu có quyền thì next(), không thì trả về lỗi

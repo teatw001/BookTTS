@@ -2,7 +2,7 @@
   <h3>Home/Books/All name god</h3>
   <div class="grid grid-cols-5 gap-8 my-10">
     <div class="col-span-1">
-      <img src="{{ product.images[0].large_url }}" alt="" class="rounded-lg" />
+      <img src="{{ product.images[0].base_url }}" alt="" class="rounded-lg" />
     </div>
     <div class="col-span-4 space-y-2">
       <h1 class="text-2xl font-bold">{{ product.name }}</h1>
@@ -291,6 +291,7 @@
           </div>
           <div class="">
             <button
+              (click)="addToCart(product)"
               class="px-10 py-3 bg-[#4f46e5] rounded-xl mx-auto text-white flex items-center space-x-2"
             >
               <svg
@@ -376,7 +377,10 @@
               }}</s></span
             >
           </div>
-          <button class="text-[#3a33b6] flex items-center space-x-2">
+          <button
+            (click)="addToCart(product)"
+            class="text-[#3a33b6] flex items-center space-x-2"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

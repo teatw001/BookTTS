@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'nz-demo-badge-link',
@@ -9,7 +11,7 @@ import { Component } from '@angular/core';
           backgroundColor: 'black',
           color: 'white',
         }"
-        [nzCount]="5"
+        [nzCount]="cartLength || 0"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -41,4 +43,19 @@ import { Component } from '@angular/core';
     `,
   ],
 })
-export class NzDemoBadgeLinkComponent {}
+export class NzDemoBadgeLinkComponent implements OnInit, OnDestroy {
+  cartLength = 0!;
+  private cartSubscription!: Subscription;
+
+  constructor(private cartService: CartService) {}
+
+  ngOnInit(): void {
+    this.cartSubscription = this.cartService.cart$.subscribe((cart) => {
+      this.cartLength = cart.length;
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.cartSubscription.unsubscribe();
+  }
+}

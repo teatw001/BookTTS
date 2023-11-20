@@ -8,10 +8,10 @@ router.get("/", getAll);
 
 router.get("/:id", getOne);
 
-router.post("/", create);
+router.post("/",checkPermission, create);
 
-router.put("/:id", edit);
+router.put("/:id",checkPermission, edit);
 
-router.delete("/:id", del);
+router.delete("/:id",checkPermission, del);
 
 export default router;

@@ -47,9 +47,11 @@ export interface ICategory {
 
 // Client interface
 export interface ICart {
-  user: string;
-  products: ICartItem[];
-  totalPrice: number;
+  idproduct: string;
+  product: string;
+  quantity: number;
+  price: number;
+  image: string;
 }
 
 export interface ICartDetail {
@@ -111,7 +113,7 @@ export interface IUser {
 export interface IOrder {
   _id: string;
   user: IUser;
-  products: IOrderProduct;
+  products: IOrderProduct[];
   totalPrice: number;
   status: string;
   createdAt: string;

@@ -10,21 +10,22 @@ import authRouter from "./router/auth";
 import forgotRouter from "./router/forgot";
 
 import cors from "cors";
+import paymentRouter from "./router/paymentvnpay";
 
 dotenv.config();
 
-const app = express()
+const app = express();
 
-app.use(express.json())
-app.use(cors())
+app.use(express.json());
+app.use(cors());
 
-app.use('/product', productRouter)
-app.use('/category', categoryRouter)
-app.use('/order', orderRouter)
-app.use('/comment', commentRouter)
-app.use('/', forgotRouter)
-app.use('/', authRouter)
+app.use("/product", productRouter);
+app.use("/category", categoryRouter);
+app.use("/order", orderRouter);
+app.use("/comment", commentRouter);
+app.use("/", forgotRouter);
+app.use("/", authRouter);
 
-mongoose.connect(process.env.URI)
+mongoose.connect(process.env.URI);
 
 export const viteNodeApp = app;

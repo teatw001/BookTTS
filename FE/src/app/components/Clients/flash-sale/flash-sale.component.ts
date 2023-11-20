@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IProduct } from 'src/app/interfaces/model';
 import { BooksService } from 'src/app/service/books.service';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-flash-sale',
@@ -11,7 +12,7 @@ export class FlashSaleComponent {
   products: IProduct[] = [];
   currentIndex: number = 0;
   responsiveOptions: any[] | undefined;
-  constructor(private productService: BooksService) {
+  constructor(private productService: BooksService,private cartservice: CartService) {
     this.productService.getProducts().subscribe(
       (data) => {
         this.products = data;
@@ -35,6 +36,11 @@ export class FlashSaleComponent {
         numScroll: 1,
       },
     ];
+  }
+  addToCart(product: IProduct) {
+    this.cartservice.addtoCart(product);
+    console.log(this.cartservice.getItem());
+    alert('Thêm giỏ hàng thành công');
   }
   // showNext() {
   //   if (this.currentIndex < this.products.length - 4) {
