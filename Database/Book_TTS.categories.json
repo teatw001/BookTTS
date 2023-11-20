@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "642a2be3d7bcf7df9146e9d4"
+  },
+  "name": "Sách giáo khoa",
+  "slug": "Sách giáo khoa",
+  "createdAt": {
+    "$date": "2023-04-03T01:29:07.560Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-03T01:29:07.560Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "642a2c04d7bcf7df9146e9d7"
+  },
+  "name": "Tiểu thuyết",
+  "slug": "Tiểu thuyết",
+  "createdAt": {
+    "$date": "2023-04-03T01:29:40.082Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-03T01:29:40.082Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6434fe8f80327827a1389928"
+  },
+  "name": "Truyện tranh",
+  "slug": "Truyện tranh",
+  "createdAt": {
+    "$date": "2023-04-11T06:30:39.990Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-11T06:30:52.335Z"
+  }
+}]

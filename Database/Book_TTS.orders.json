@@ -1,0 +1,266 @@
+[{
+  "_id": {
+    "$oid": "655a6f8834b26ec543f6ca69"
+  },
+  "user": {
+    "$oid": "6558008c7edf8ef6be7a8f14"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "654e82f97f1f66ed2b13c793"
+      },
+      "quantity": 1,
+      "price": 500000,
+      "_id": {
+        "$oid": "655a6f8834b26ec543f6ca6a"
+      }
+    }
+  ],
+  "totalPrice": 500000,
+  "status": "Đang xử lý",
+  "createdAt": {
+    "$date": "2023-11-19T20:26:48.689Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-19T21:01:23.022Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655a717634b26ec543f6ca6d"
+  },
+  "user": {
+    "$oid": "6558008c7edf8ef6be7a8f14"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "654e82f97f1f66ed2b13c793"
+      },
+      "quantity": 1,
+      "price": {
+        "$numberLong": "500000500000"
+      },
+      "_id": {
+        "$oid": "655a717634b26ec543f6ca6e"
+      }
+    }
+  ],
+  "totalPrice": 500000,
+  "status": "Đang chờ xử lý",
+  "createdAt": {
+    "$date": "2023-11-19T20:35:02.103Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-19T20:35:02.103Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655a74ed34b26ec543f6ca7b"
+  },
+  "user": {
+    "$oid": "655a567834b26ec543f6c936"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "654e82f97f1f66ed2b13c793"
+      },
+      "quantity": 2,
+      "price": 138000,
+      "_id": {
+        "$oid": "655a74ed34b26ec543f6ca7c"
+      }
+    },
+    {
+      "product": {
+        "$oid": "655a561334b26ec543f6c8f3"
+      },
+      "quantity": 1,
+      "price": 124375,
+      "_id": {
+        "$oid": "655a74ed34b26ec543f6ca7d"
+      }
+    }
+  ],
+  "totalPrice": 430375,
+  "status": "Đang chờ xử lý",
+  "createdAt": {
+    "$date": "2023-11-19T20:49:49.199Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-19T20:49:49.199Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b49b2db7876a409e6ab6b"
+  },
+  "user": {
+    "$oid": "655890317edf8ef6be7a942c"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "654e82f97f1f66ed2b13c793"
+      },
+      "quantity": 1,
+      "price": 138000,
+      "_id": {
+        "$oid": "655b49b2db7876a409e6ab6c"
+      }
+    },
+    {
+      "product": {
+        "$oid": "655b2197db7876a409e69ec2"
+      },
+      "quantity": 1,
+      "price": 79999,
+      "_id": {
+        "$oid": "655b49b2db7876a409e6ab6d"
+      }
+    }
+  ],
+  "totalPrice": 247999,
+  "status": "Đang chờ xử lý",
+  "createdAt": {
+    "$date": "2023-11-20T11:57:38.806Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T11:57:38.806Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b4a6cdb7876a409e6ac32"
+  },
+  "user": {
+    "$oid": "655890317edf8ef6be7a942c"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "655b2068db7876a409e69e7a"
+      },
+      "quantity": 1,
+      "price": 59999,
+      "_id": {
+        "$oid": "655b4a6cdb7876a409e6ac33"
+      }
+    },
+    {
+      "product": {
+        "$oid": "655b2197db7876a409e69ec2"
+      },
+      "quantity": 1,
+      "price": 79999,
+      "_id": {
+        "$oid": "655b4a6cdb7876a409e6ac34"
+      }
+    }
+  ],
+  "totalPrice": 169998,
+  "status": "Đang chờ xử lý",
+  "createdAt": {
+    "$date": "2023-11-20T12:00:44.789Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T12:00:44.789Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b4a98db7876a409e6acab"
+  },
+  "user": {
+    "$oid": "655890317edf8ef6be7a942c"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "655b2068db7876a409e69e7a"
+      },
+      "quantity": 1,
+      "price": 59999,
+      "_id": {
+        "$oid": "655b4a98db7876a409e6acac"
+      }
+    },
+    {
+      "product": {
+        "$oid": "655b2197db7876a409e69ec2"
+      },
+      "quantity": 1,
+      "price": 79999,
+      "_id": {
+        "$oid": "655b4a98db7876a409e6acad"
+      }
+    }
+  ],
+  "totalPrice": 169998,
+  "status": "Đang chờ xử lý",
+  "createdAt": {
+    "$date": "2023-11-20T12:01:28.135Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T12:01:28.135Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b4adadb7876a409e6acfb"
+  },
+  "user": {
+    "$oid": "655890317edf8ef6be7a942c"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "655b1f4adb7876a409e69e5d"
+      },
+      "quantity": 1,
+      "price": 99000,
+      "_id": {
+        "$oid": "655b4adadb7876a409e6acfc"
+      }
+    }
+  ],
+  "totalPrice": 99000,
+  "status": "Đang chờ xử lý",
+  "createdAt": {
+    "$date": "2023-11-20T12:02:34.502Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T12:02:34.502Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b4affdb7876a409e6ad79"
+  },
+  "user": {
+    "$oid": "655890317edf8ef6be7a942c"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "655b2197db7876a409e69ec2"
+      },
+      "quantity": 1,
+      "price": 79999,
+      "_id": {
+        "$oid": "655b4affdb7876a409e6ad7a"
+      }
+    }
+  ],
+  "totalPrice": 109999,
+  "status": "Đang chờ xử lý",
+  "createdAt": {
+    "$date": "2023-11-20T12:03:11.525Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T12:03:11.525Z"
+  }
+}]

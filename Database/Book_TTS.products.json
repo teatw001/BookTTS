@@ -1,0 +1,249 @@
+[{
+  "_id": {
+    "$oid": "654e82f97f1f66ed2b13c793"
+  },
+  "name": "CÂY CAM NGỌT CỦA TÔI",
+  "price": 138000,
+  "original_price": 199000,
+  "short_description": "“Chỉ là vì không ai yêu thương em hết, mọi người trút hết giận dữ lên em”.",
+  "description": "<p>Chúng ta đang sống trong một thời đại vội vã, dường như mọi giao tiếp đều ở trên màn hình xanh, và dường như chúng ta thường quên đi những niềm vui giản dị, những ấm áp yêu thương, những cử chỉ chân thành ở một nơi mà chúng ta sống nhiều hơn ở nhà – đó là công sở.</p>\n<p>Để rồi một ngày mọi áp lực như đổ vào đầu chúng ta cùng một lúc, áp lực từ sếp, áp lực từ đồng nghiệp, áp lực từ nhân viên…</p>\n<p>Xì trét … xì trét khiến mỗi đêm chúng ta không thể ngủ được rồi luôn tự hỏi: Chúng ta đang làm cái quái gì vậy?</p>\n<p>Thực tế là, chúng ta có làm gì đâu? Chính vì chúng ta không làm gì nên xì trét nối liền xì trét, áp lực nối liền áp lực.</p>\n<p>Giá mà chúng ta biết lắng nghe hơn, biết chia sẻ hơn, biết hợp tác hơn, biết rèn luyện kỹ năng cho bản thân hơn, biết tôn trọng hơn… thì công sở thực sự là một mái nhà thứ hai của chúng ta.</p>\n<p>Để cho mọi nhân viên, mọi vị sếp không thốt lên từ “giá mà”, chúng tôi viết cuốn sách này, từ kinh nghiệm quý báu trong và ngoài nước hi vọng có thể như một chiếc phao giúp quý vị “sống sót” giữa muôn trùng dông bão có tên là “áp lực nơi công sở”.</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>",
+  "quantity_sold": 4646465,
+  "rating_average": 5,
+  "authors": "Nhã Nam",
+  "isInFlashSale": true,
+  "images": [
+    {
+      "poster": "https://revisach.com/wp-content/uploads/2021/08/review-sach-cay-cam-ngot-cua-toi.png",
+      "base_url": "https://www.dtv-ebook.com/images/files_2/2021/102021/cay-cam-ngot-cua-toi.jpg",
+      "label": null,
+      "position": null,
+      "_id": {
+        "$oid": "655b22aadb7876a409e69fd0"
+      }
+    }
+  ],
+  "brand": {
+    "$oid": "642a2c04d7bcf7df9146e9d7"
+  },
+  "specifications": [
+    {
+      "name": "Thông tin chung",
+      "attributes": [
+        {
+          "code": "publisher_vn",
+          "name": "Công ty phát hành",
+          "value": "SBOOKS",
+          "_id": {
+            "$oid": "654e82f97f1f66ed2b13c796"
+          }
+        },
+        {
+          "code": "number_of_page",
+          "name": "Số trang",
+          "value": "336",
+          "_id": {
+            "$oid": "654e82f97f1f66ed2b13c797"
+          }
+        },
+        {
+          "code": "manufacturer",
+          "name": "Nhà xuất bản",
+          "value": "Nhà Xuất Bản Thế Giới",
+          "_id": {
+            "$oid": "654e82f97f1f66ed2b13c798"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "654e82f97f1f66ed2b13c795"
+      }
+    }
+  ],
+  "comments": [],
+  "createdAt": {
+    "$date": "2023-11-10T19:22:33.269Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T09:11:06.084Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b1f4adb7876a409e69e5d"
+  },
+  "name": "NHẬT KÍ CỦA MẸ",
+  "price": 99000,
+  "original_price": 159999,
+  "short_description": "“Sau khi sinh con sau tôi trở thành người dễ xúc động hơn. Tôi cảm thông hơn với những hoàn cảnh trẻ thơ kém may mắn. Tình mẫu tử là một tình cảm thiêng liêng. Tôi hy vọng cuốn sách sẽ giúp độc giả thấy yêu cuộc sống \"",
+  "description": " Bởi lẽ những tâm sự và câu chuyện của tác giả rất gần gũi và đúng với tâm trạng của rất nhiều bà mẹ đã từng sinh con. Khi mới bắt đầu vẽ những bức tranh đầu tiên, Kawa Chan chỉ đơn giản muốn lưu giữ những khoảnh khắc đáng nhớ trong quá trình mang thai để sau này có thể cho con mình xem lại, nhưng sau đó, những nét vẽ đáng yêu, hài hước của tác giả đã nhận được sự ủng hộ nồng nhiệt của rất nhiều người.",
+  "quantity_sold": 599,
+  "rating_average": 4,
+  "authors": "Kawa Chan",
+  "isInFlashSale": true,
+  "images": [
+    {
+      "poster": "https://i.ytimg.com/vi/Pi3NVMWlu6w/maxresdefault.jpg",
+      "base_url": "https://icdn.dantri.com.vn/fHyjZiIccccccccccccj/Image/2014/03/Nhat-ky-cua-me-bia-f70d2.jpg",
+      "label": null,
+      "position": null,
+      "_id": {
+        "$oid": "655b1f4adb7876a409e69e5e"
+      }
+    }
+  ],
+  "brand": {
+    "$oid": "6434fe8f80327827a1389928"
+  },
+  "specifications": [],
+  "comments": [],
+  "createdAt": {
+    "$date": "2023-11-20T08:56:42.143Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T08:56:42.143Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b2068db7876a409e69e7a"
+  },
+  "name": "TẤM CÁM",
+  "price": 59999,
+  "original_price": 169999,
+  "short_description": "\"Tấm Cám là một câu chuyện cổ tích Việt Nam thuộc thể loại truyện cổ tích thần kì.\"",
+  "description": "Tấm Cám là một câu chuyện cổ tích Việt Nam thuộc thể loại truyện cổ tích thần kì. Dù có nhiều dị bản, câu chuyện này phản ánh những mâu thuẫn trong gia đình, đặc biệt là mối quan hệ mẹ kế - con chồng; cuộc đấu tranh giữa và cái thiện thắng cái ác của người Việt.",
+  "quantity_sold": 1000,
+  "rating_average": 5,
+  "authors": "Lưu Quang Thuận",
+  "isInFlashSale": false,
+  "images": [
+    {
+      "poster": "https://img.idesign.vn/2019/12/id-tamcam-cover-1.jpg",
+      "base_url": "https://img.idesign.vn/2019/12/id-tamcam-1.jpg",
+      "label": null,
+      "position": null,
+      "_id": {
+        "$oid": "655b2068db7876a409e69e7b"
+      }
+    }
+  ],
+  "brand": {
+    "$oid": "6434fe8f80327827a1389928"
+  },
+  "specifications": [],
+  "comments": [],
+  "createdAt": {
+    "$date": "2023-11-20T09:01:28.097Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T09:01:28.097Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b2197db7876a409e69ec2"
+  },
+  "name": "TRUYỆN KIỀU",
+  "price": 79999,
+  "original_price": 129999,
+  "short_description": "Sách “Truyện Kiều và Tarot” là những đối chiếu giữa 78 tình huống, sự kiện đời người của tarot với những cảnh tình của cuộc đời nàng Thúy Kiều trong mối quan hệ với những người tình của cô",
+  "description": " Thủ pháp ước lệ tượng trưng: Đây là thủ pháp miêu tả được sử dụng trong văn học Trung đại, lấy vẻ đẹp thiên nhiên tả vẻ đẹp con người. Thiên nhiên là trung tâm, là chuẩn mực của cái đẹp.  - Trong đoạn trích “Chị em Thúy Kiều”: Giới thiệu chị em Thúy Kiều: “đầu lòng hai ả tố nga”, “mai cốt cách tuyết tinh thần” – mĩ từ ca ngợi 2 cô gái đẹp người đẹp nết.",
+  "quantity_sold": 399,
+  "rating_average": 4,
+  "authors": "Phan Nhật Chiêu",
+  "isInFlashSale": false,
+  "images": [
+    {
+      "poster": "https://img.idesign.vn/w1800/2022/08/220812_id_tarotkieu_thumb.jpg",
+      "base_url": "https://shop.comicola.com/wp-content/uploads/2022/09/KIEU_2.jpg",
+      "label": null,
+      "position": null,
+      "_id": {
+        "$oid": "655b2197db7876a409e69ec3"
+      }
+    }
+  ],
+  "brand": {
+    "$oid": "642a2be3d7bcf7df9146e9d4"
+  },
+  "specifications": [],
+  "comments": [],
+  "createdAt": {
+    "$date": "2023-11-20T09:06:31.398Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T09:06:31.398Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b235bdb7876a409e69ffc"
+  },
+  "name": "Viết đi đừng sợ",
+  "price": 299999,
+  "original_price": 599999,
+  "short_description": "Viết đi đừng sợ là cẩm nang viết dành cho những bạn newbie đang tìm hiểu về content marketing hoặc đơn giản chỉ là thích viết nhưng chưa biết bắt đầu từ đâu. Thông qua giọng văn gần gũi, chân thật, bạn có thể dễ dàng tìm thấy động lực",
+  "description": "Viết đi đừng sợ là cẩm nang viết dành cho những bạn newbie đang tìm hiểu về content marketing hoặc đơn giản chỉ là thích viết nhưng chưa biết bắt đầu từ đâu. Thông qua giọng văn gần gũi, chân thật, bạn có thể dễ dàng tìm thấy động lực viết cũng như đánh bật nỗi sợ viết.   Thậm chí khi bạn đã là một tay viết cứng, đã viết rất nhiều năm từ thể loại content website, PR cho đến viết sách thì Viết đi đừng sợ cũng sẽ giúp bạn “reset” tư duy lại một chút. Bạn học được cách xây dựng thương hiệu cá nhân nhờ viết lách, cách kinh doanh bằng con chữ hiệu quả và lâu dài.  “Hành trình đi cùng nhau xuyên suốt cuốn sách này rất có thể sẽ khiến bạn cảm thấy có nhiều sự tươi mới và hào hứng hơn trong viết lách, nhất là nếu như bạn đang cảm thấy mình dần “mòn mỏi với công việc viết lặp đi lặp lại từ ngày này qua tháng khác trong vài năm qua.” (Lời tác giả)",
+  "quantity_sold": 899,
+  "rating_average": 4.5,
+  "authors": "Linh Phan",
+  "isInFlashSale": false,
+  "images": [
+    {
+      "poster": "https://duongstory.com/wp-content/uploads/2021/09/viet-di-dung-so-cuon-sach-danh-cho-tay-mo-thich-viet-thumbnail.jpg",
+      "base_url": "https://salt.tikicdn.com/cache/w400/ts/product/cf/b0/16/8d8275b11faf028126e88c6b12b73e7b.jpg",
+      "label": null,
+      "position": null,
+      "_id": {
+        "$oid": "655b235bdb7876a409e69ffd"
+      }
+    }
+  ],
+  "brand": {
+    "$oid": "642a2be3d7bcf7df9146e9d4"
+  },
+  "specifications": [],
+  "comments": [],
+  "createdAt": {
+    "$date": "2023-11-20T09:14:03.518Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T09:14:03.518Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655b2420db7876a409e6a023"
+  },
+  "name": " Tâm Lý Học Về Tiền",
+  "price": 49999,
+  "original_price": 129999,
+  "short_description": "Tiền bạc có ở khắp mọi nơi, nó ảnh hưởng đến tất cả chúng ta, và khiến phần lớn chúng ta bối rối. ",
+  "description": "Tiền bạc có ở khắp mọi nơi, nó ảnh hưởng đến tất cả chúng ta, và khiến phần lớn chúng ta bối rối. Mọi người nghĩ về nó theo những cách hơi khác nhau một chút. Nó mang lại những bài học có thể được áp dụng tới rất nhiều lĩnh vực trong cuộc sống, như rủi ro, sự tự tin, và hạnh phúc. Rất ít chủ đề cung cấp một lăng kính phóng to đầy quyền lực giúp giải thích vì sao mọi người lại hành xử theo cách họ làm hơn là về tiền bạc. Đó mới là một trong những chương trình hoành tráng nhất trên thế giới.  Chúng ta hiếm khi lâm vào hoàn cảnh nợ ngập đầu ư? Biết tiết kiệm để dành cho lúc khốn khó hơn ư? Chuẩn bị sẵn sàng cho việc nghỉ hưu? Có những cái nhìn thiết thực về mối quan hệ giữa tiền và hạnh phúc của chúng ta hơn phải không?",
+  "quantity_sold": 399,
+  "rating_average": 3.9,
+  "authors": "Hoàng Thị Minh Phúc",
+  "isInFlashSale": false,
+  "images": [
+    {
+      "poster": "https://revisach.com/wp-content/uploads/2022/05/review-sach-tam-ly-hoc-ve-tien.png",
+      "base_url": "https://salt.tikicdn.com/cache/w1200/ts/product/83/23/b7/14a42ae4f66c9b8b298aaef4b9671442.jpg",
+      "label": null,
+      "position": null,
+      "_id": {
+        "$oid": "655b2420db7876a409e6a024"
+      }
+    }
+  ],
+  "brand": {
+    "$oid": "642a2c04d7bcf7df9146e9d7"
+  },
+  "specifications": [],
+  "comments": [],
+  "createdAt": {
+    "$date": "2023-11-20T09:17:20.827Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-20T09:17:20.827Z"
+  }
+}]

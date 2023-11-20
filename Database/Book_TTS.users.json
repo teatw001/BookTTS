@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "6558008c7edf8ef6be7a8f14"
+  },
+  "name": "Duy",
+  "email": "tea@gmail.com",
+  "phone": "0988571284",
+  "address": "123",
+  "password": "$2a$10$woe/FfwZ1ub8kobB03xTx.3rg4UF6hNnDOB6miiWcXeGcZa1nMRWu",
+  "role": "User",
+  "createdAt": {
+    "$date": "2023-11-18T00:08:44.616Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-18T00:08:44.616Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655890317edf8ef6be7a942c"
+  },
+  "name": "Duy",
+  "email": "admin@admin.com",
+  "phone": "0912345678",
+  "address": "hn",
+  "password": "$2a$10$Qe9PpXdTotSYMqrkypDct.D8d.9KIVmtVsE5ewYL1mqgIpUhCYW4y",
+  "role": "Admin",
+  "createdAt": {
+    "$date": "2023-11-18T10:21:37.276Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-18T10:21:37.276Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "655a567834b26ec543f6c936"
+  },
+  "name": "Duyy",
+  "email": "test@gmail.com",
+  "phone": "0988571284",
+  "address": "hn",
+  "password": "$2a$10$pHRy75s/0J2jMXgyCHQ4pOVp.fXHfB/jV9QNpGQNOvumLJKNdQg6C",
+  "role": "User",
+  "createdAt": {
+    "$date": "2023-11-19T18:39:52.181Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-19T18:39:52.181Z"
+  }
+}]
